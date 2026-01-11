@@ -45,8 +45,8 @@ export default function Hero() {
 	}, []);
 
 	return (
-		<div className="bg-[#f8f8f8] min-h-screen flex flex-col justify-center">
-			<div className="max-w-6xl mx-auto my-8 sm:my-12 px-4 sm:px-6 lg:px-8 relative">
+		<div className="bg-[#f8f8f8] min-h-screen flex flex-col justify-center overflow-hidden">
+			<div className="max-w-6xl mx-auto my-8 sm:my-12 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
 				<div className="py-3 sm:py-5 flex items-center gap-3 mb-8 sm:mb-12">
 					<Button
 						variant="outline"
@@ -78,13 +78,13 @@ export default function Hero() {
 				</div>
 
 				{!isMobile && (
-					<div className="absolute top-0 right-0 w-full h-full pointer-events-none hidden md:block">
+					<div className="absolute top-0 right-0 w-full h-full pointer-events-none hidden md:block overflow-hidden">
 						<Image
-							className="absolute hidden lg:block -right-[39rem] -bottom-[-17.2rem] max-w-[900px] w-auto h-auto object-contain"
+							className="absolute hidden lg:block -right-[20rem] -bottom-[10rem] max-w-[600px] w-auto h-auto object-contain"
 							src="/rope.png"
 							alt="Rope illustration"
-							width={900}
-							height={900}
+							width={600}
+							height={600}
 						/>
 					</div>
 				)}
